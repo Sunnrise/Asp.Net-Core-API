@@ -1,8 +1,8 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Entities.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
-using WebApiBtk.Models;
-using WebApiBtk.Repositories;
+using Repositories.EFCore;
 
 namespace WebApiBtk.Controllers
 {

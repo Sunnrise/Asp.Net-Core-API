@@ -1,8 +1,13 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Entities.Models;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using WebApiBtk.Models;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace WebApiBtk.Repositories.Configurations
+namespace Repositories.EFCore.Configurations
 {
     public class BookConfiguration : IEntityTypeConfiguration<Book>
     {
