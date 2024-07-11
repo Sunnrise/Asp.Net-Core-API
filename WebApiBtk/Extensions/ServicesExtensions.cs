@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Repositories.Contracts;
 using Repositories.EFCore;
 
 namespace WebApiBtk.Extensions
@@ -12,5 +13,10 @@ namespace WebApiBtk.Extensions
                 options.UseSqlServer(configuration.GetConnectionString("sqlConnection"));
             });
         }
+        public static void ConfigureRepositoryManager(this IServiceCollection services)
+        {
+            services.AddScoped<IRepositoryManager, RepositoryManager>();
+        }
     }
+   
 }
