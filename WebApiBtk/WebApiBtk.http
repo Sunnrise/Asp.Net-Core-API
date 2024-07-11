@@ -1,0 +1,6 @@
+@WebApiBtk_HostAddress = http://localhost:5004
+
+GET {{WebApiBtk_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
