@@ -43,6 +43,7 @@ namespace Presentation.Controllers
         {
             try
             {
+                throw new Exception("Test Exception");
                 var book = _manager
                 .BookService
                 .GetOneBookById(id, false);
