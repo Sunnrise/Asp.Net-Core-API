@@ -22,7 +22,7 @@ namespace Repositories.EFCore
         public IQueryable<Book> GetAllBooks(bool trackChanges) => FindAll(trackChanges);
        
 
-        public Book GetBookById(int d, bool trackChanges) => FindByCondition(b => b.Id == d, trackChanges).SingleOrDefault();
+        public Book GetOneBookById(int d, bool trackChanges) => FindByCondition(b => b.Id == d, trackChanges).SingleOrDefault();
 
         public void UpdateOneBook(Book book) => Update(book);
 
