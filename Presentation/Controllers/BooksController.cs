@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 namespace Presentation.Controllers
 {
     [ApiController]
-    [Route("api/[Books]")]
+    [Route("api/books")]
     public class BooksController : ControllerBase
     {
         private readonly IServiceManager _manager;

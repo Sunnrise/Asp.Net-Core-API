@@ -9,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 LogManager.LoadConfiguration(String.Concat(Directory.GetCurrentDirectory(),"/nlog.config"));
+
 builder.Services.AddControllers()
 .AddApplicationPart(typeof(Presentation.AssemblyReference).Assembly)
 .AddNewtonsoftJson();
