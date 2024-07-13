@@ -50,7 +50,10 @@ namespace Presentation.Controllers
             if (bookDto is null)
                 return BadRequest(); // 400 
 
-           var book= _manager.BookService.CreateOneBook(bookDto);
+            if (!ModelState.IsValid)
+                return UnprocessableEntity(ModelState); // 422
+
+            var book= _manager.BookService.CreateOneBook(bookDto);
 
 
             return StatusCode(201, book);//CreatedAtRoute
@@ -61,12 +64,15 @@ namespace Presentation.Controllers
         public IActionResult UpdateOneBook([FromRoute(Name = "id")] int id,
             [FromBody] BookDtoForUpdate bookDto)
         {
-
-
             if (bookDto is null)
                 return BadRequest(); // 400
                                      // check book?
-            _manager.BookService.UpdateOneBook(id, bookDto, true);
+
+            if (!ModelState.IsValid)
+                return UnprocessableEntity(ModelState); // 422
+
+
+            _manager.BookService.UpdateOneBook(id, bookDto, false);
 
             return NoContent();//204
         }
