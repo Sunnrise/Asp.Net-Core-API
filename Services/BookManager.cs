@@ -76,5 +76,21 @@ namespace Services
 
 
         }
+
+        (BookDtoForUpdate bookDtoForUpdate, Book book) IBookService.GetOneBookForPatch(int id, bool trackChanges)
+        {
+            var book = _manager.Book.GetOneBookById(id, trackChanges);
+            if (book == null)
+                throw new BookNotFoundException(id); //404
+
+            var bookDtoForUpdate = _mapper.Map<BookDtoForUpdate>(book);
+            return (bookDtoForUpdate, book);
+        }
+
+        void IBookService.SaveChangesForPatch(BookDtoForUpdate bookDtoForUpdate, Book book)
+        {
+           _mapper.Map(bookDtoForUpdate, book);
+            _manager.Save();
+        }
     }
 }
