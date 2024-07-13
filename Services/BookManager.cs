@@ -24,12 +24,12 @@ namespace Services
             _mapper = mapper;
         }
 
-        public Book CreateOneBook(Book book)
+        public BookDto CreateOneBook(BookDtoForInsertion bookDto)
         {
-            
-            _manager.Book.CreateOneBook(book);
+            var enttity = _mapper.Map<Book>(bookDto);
+            _manager.Book.CreateOneBook(enttity);
             _manager.Save();
-            return book;
+            return _mapper.Map<BookDto>(enttity);
         }
 
         public void DeleteOneBook(int id, bool trackChanges)
@@ -47,12 +47,12 @@ namespace Services
             return _mapper.Map<IEnumerable<BookDto>>(books);
         }
 
-        public Book GetOneBookById(int id, bool trackChanges)
+        public BookDto GetOneBookById(int id, bool trackChanges)
         {
             var book= _manager.Book.GetOneBookById(id, trackChanges);
             if (book is null)
                 throw new BookNotFoundException(id); //404
-            return book;
+            return _mapper.Map<BookDto>(book);
         }
 
         public void UpdateOneBook(int id,
@@ -60,7 +60,7 @@ namespace Services
             bool trackChanges)
         {
             //Check entity
-            var entity = _manager.Book.GetOneBookById(id, true);
+            var entity = _manager.Book.GetOneBookById(id, trackChanges);
             if (entity == null)
                 throw new BookNotFoundException(id); //404
 
@@ -75,6 +75,22 @@ namespace Services
 
 
 
+        }
+
+        (BookDtoForUpdate bookDtoForUpdate, Book book) IBookService.GetOneBookForPatch(int id, bool trackChanges)
+        {
+            var book = _manager.Book.GetOneBookById(id, trackChanges);
+            if (book == null)
+                throw new BookNotFoundException(id); //404
+
+            var bookDtoForUpdate = _mapper.Map<BookDtoForUpdate>(book);
+            return (bookDtoForUpdate, book);
+        }
+
+        void IBookService.SaveChangesForPatch(BookDtoForUpdate bookDtoForUpdate, Book book)
+        {
+           _mapper.Map(bookDtoForUpdate, book);
+            _manager.Save();
         }
     }
 }
