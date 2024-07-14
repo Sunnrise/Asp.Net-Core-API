@@ -10,6 +10,6 @@ namespace Repositories.Contracts
     {
         IBookRepository Book { get; }
         //Task SaveAsync();
-        void Save();
+       Task SaveAsync();
     }
 }
