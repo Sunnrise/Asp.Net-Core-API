@@ -1,6 +1,7 @@
 ﻿using Entities.DataTransferObject;
 using Entities.Exceptions;
 using Entities.Models;
+using Entities.RequestFeatures;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
@@ -27,9 +28,9 @@ namespace Presentation.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAllBooksAsync()
+        public async Task<IActionResult> GetAllBooksAsync([FromQuery]BookParameters bookParameters)
         {
-            var books = await _manager.BookService.GetAllBooksAsync(false);
+            var books = await _manager.BookService.GetAllBooksAsync(bookParameters,false);
             return Ok(books);
         }
 
