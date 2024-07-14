@@ -40,11 +40,16 @@ namespace Services
             await _manager.SaveAsync();
         }
 
-        public async Task<(IEnumerable<BookDto> books, MetaData metaData)> GetAllBooksAsync(BookParameters bookParameters, bool trackChanges)
+        public async Task<(IEnumerable<BookDto> books, MetaData metaData)>
+            GetAllBooksAsync(BookParameters bookParameters,
+            bool trackChanges)
         {
-            var booksWithMetaData=  await _manager.Book.GetAllBooksAsync(bookParameters, trackChanges);
-            var booksDto= _mapper.Map<IEnumerable<BookDto>>(booksWithMetaData);
-            return(booksDto, booksWithMetaData.MetaData);
+            var booksWithMetaData = await _manager
+                .Book
+                .GetAllBooksAsync(bookParameters, trackChanges);
+
+            var booksDto = _mapper.Map<IEnumerable<BookDto>>(booksWithMetaData);
+            return (booksDto, booksWithMetaData.MetaData);
         }
 
         public async Task<BookDto> GetOneBookByIdAsync(int id, bool trackChanges)
@@ -98,5 +103,7 @@ namespace Services
                 throw new BookNotFoundException(id); //404
             return entity;
         }
+
+        
     }
 }
