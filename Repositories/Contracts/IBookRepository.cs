@@ -1,4 +1,5 @@
-﻿using Entities.Models;
+﻿using Entities.DataTransferObject;
+using Entities.Models;
 using Entities.RequestFeatures;
 using System;
 using System.Collections.Generic;
@@ -10,7 +11,7 @@ namespace Repositories.Contracts
 {
     public interface IBookRepository : IRepositoryBase<Book>
     {
-        Task<PagedList<Book>> GetAllBooksAsync(BookParameters bookParameters, bool trackChanges);
+        Task<PagedList<BookDto>> GetAllBooksAsync(BookParameters bookParameters, bool trackChanges);
         Task<Book> GetOneBookByIdAsync(int id, bool trackChanges);
         void CreateOneBook(Book book);
         void UpdateOneBook(Book book);
