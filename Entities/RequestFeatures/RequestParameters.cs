@@ -17,7 +17,7 @@ namespace Entities.RequestFeatures
         private int _pageSize;
         public int PageSize
         {
-            get => _pageSize;
+            get =>  _pageSize;
             set => _pageSize = (value > maxPageSize) ? maxPageSize : value;
         }
     }
