@@ -30,7 +30,7 @@ namespace Presentation.Controllers
 
         [HttpGet]
         public async Task<IActionResult> GetAllBooksAsync([FromQuery]BookParameters bookParameters)
-        {
+         {
             var pagedResult = await _manager
                 .BookService
                 .GetAllBooksAsync(bookParameters,false);
