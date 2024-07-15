@@ -5,7 +5,7 @@
         public List<T> Value { get; set; } = new();
         public LinkCollectionWrapper()
         {
-            Value = new List<T>();
+            
         }
         public LinkCollectionWrapper(List<T> value)
         {
