@@ -43,6 +43,7 @@ builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.ConfigureActionFilters();
 builder.Services.ConfigureCors();
 builder.Services.ConfigureDataShaper();
+builder.Services.AddCustomMediaTypes();
 
 var app = builder.Build();
 
