@@ -32,14 +32,18 @@ namespace Presentation.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllBooksAsync([FromQuery]BookParameters bookParameters)
          {
-            var pagedResult = await _manager
+            var linkParameters = new LinkParameters() { HttpContext=HttpContext, BookParameters = bookParameters };
+         
+            var result = await _manager
                 .BookService
-                .GetAllBooksAsync(bookParameters,false);
+                .GetAllBooksAsync(linkParameters, false);
 
             Response.Headers.Add("X-Pagination",
-                JsonSerializer.Serialize(pagedResult.metaData));
+                JsonSerializer.Serialize(result.metaData));
 
-            return Ok(pagedResult.books);
+            return result.linkResponse.HasLinks ?
+                Ok(result.linkResponse.LinkedEntities) :
+                Ok(result.linkResponse.ShapedEntities);
         }
 
 
