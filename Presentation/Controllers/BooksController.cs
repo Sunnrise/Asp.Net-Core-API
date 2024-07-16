@@ -21,6 +21,7 @@ namespace Presentation.Controllers
     [ApiController]
     //[Route("api/{v:apiversion}/books")]// Its for url versioning
     [Route("api/books")]
+    [ResponseCache(CacheProfileName = "5mins")]
     public class BooksController : ControllerBase
     {
         private readonly IServiceManager _manager;
