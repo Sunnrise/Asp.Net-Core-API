@@ -328,3 +328,39 @@
 2024-07-16 19:02:41.8257 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
 2024-07-16 19:02:41.8549 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\alper\Documents\vsstudio project\Asp.Net-Core-API\WebApiBtk\nlog.config
 2024-07-16 19:02:41.8751 Info Configuration initialized.
+2024-07-16 21:16:09.7588 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-07-16 21:16:09.7880 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-07-16 21:16:09.7880 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\alper\Documents\vsstudio project\Asp.Net-Core-API\WebApiBtk\nlog.config
+2024-07-16 21:16:09.8043 Info Configuration initialized.
+2024-07-16 21:16:11.0024 Info AppDomain Shutting down. LogFactory closing...
+2024-07-16 21:16:11.0081 Info LogFactory has been closed.
+2024-07-16 21:19:26.1075 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-07-16 21:19:26.1199 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-07-16 21:19:26.1199 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\alper\Documents\vsstudio project\Asp.Net-Core-API\WebApiBtk\nlog.config
+2024-07-16 21:19:26.1346 Info Configuration initialized.
+2024-07-16 21:19:27.5234 Info AppDomain Shutting down. LogFactory closing...
+2024-07-16 21:19:27.5234 Info LogFactory has been closed.
+2024-07-16 21:30:39.3543 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-07-16 21:30:39.3667 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-07-16 21:30:39.3667 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\alper\Documents\vsstudio project\Asp.Net-Core-API\WebApiBtk\nlog.config
+2024-07-16 21:30:39.3820 Info Configuration initialized.
+2024-07-16 21:30:40.4291 Info AppDomain Shutting down. LogFactory closing...
+2024-07-16 21:30:40.4291 Info LogFactory has been closed.
+2024-07-16 21:31:18.2989 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-07-16 21:31:18.3119 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-07-16 21:31:18.3189 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\alper\Documents\vsstudio project\Asp.Net-Core-API\WebApiBtk\nlog.config
+2024-07-16 21:31:18.3189 Info Configuration initialized.
+2024-07-16 21:31:19.2413 Info AppDomain Shutting down. LogFactory closing...
+2024-07-16 21:31:19.2413 Info LogFactory has been closed.
+2024-07-16 21:41:53.8832 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-07-16 21:41:53.8832 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-07-16 21:41:53.9014 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\alper\Documents\vsstudio project\Asp.Net-Core-API\WebApiBtk\nlog.config
+2024-07-16 21:41:53.9014 Info Configuration initialized.
+2024-07-16 21:41:54.9773 Info AppDomain Shutting down. LogFactory closing...
+2024-07-16 21:41:54.9773 Info LogFactory has been closed.
+2024-07-16 21:42:07.9547 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-07-16 21:42:07.9660 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-07-16 21:42:07.9660 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\alper\Documents\vsstudio project\Asp.Net-Core-API\WebApiBtk\nlog.config
+2024-07-16 21:42:07.9797 Info Configuration initialized.
+2024-07-16 21:42:08.7992 Info AppDomain Shutting down. LogFactory closing...
+2024-07-16 21:42:08.8050 Info LogFactory has been closed.

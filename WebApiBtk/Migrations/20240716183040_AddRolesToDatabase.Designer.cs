@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Repositories.EFCore;
 
@@ -11,9 +12,11 @@ using Repositories.EFCore;
 namespace WebApiBtk.Migrations
 {
     [DbContext(typeof(RepositoryContext))]
-    partial class RepositoryContextModelSnapshot : ModelSnapshot
+    [Migration("20240716183040_AddRolesToDatabase")]
+    partial class AddRolesToDatabase
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -162,22 +165,19 @@ namespace WebApiBtk.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "4a0433e4-27cc-48ee-a946-a08173d1e4ea",
-                            ConcurrencyStamp = "27538c6c-a239-479f-badd-37588c2f6daa",
+                            Id = "cb564188-889a-43c7-928b-84c3ca4c32d8",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "89044cc3-2311-4eb2-8dd4-a97331bce478",
-                            ConcurrencyStamp = "528e1057-4190-4b53-a40a-9139a6a57333",
+                            Id = "46b0011d-911a-47ba-adec-763558321e2b",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = "b64345c7-4a93-4574-9e7a-d1bc040634ce",
-                            ConcurrencyStamp = "57af9451-5224-4336-b181-7fba127f826e",
+                            Id = "caf09860-4dbc-4a3c-9eb6-7336a3cd16f1",
                             Name = "Editor",
                             NormalizedName = "EDITOR"
                         });
