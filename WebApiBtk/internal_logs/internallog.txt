@@ -364,3 +364,35 @@
 2024-07-16 21:42:07.9797 Info Configuration initialized.
 2024-07-16 21:42:08.7992 Info AppDomain Shutting down. LogFactory closing...
 2024-07-16 21:42:08.8050 Info LogFactory has been closed.
+2024-07-16 22:38:04.2149 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-07-16 22:38:04.2761 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-07-16 22:38:04.2838 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\alper\Documents\vsstudio project\Asp.Net-Core-API\WebApiBtk\nlog.config
+2024-07-16 22:38:04.2924 Info Configuration initialized.
+2024-07-16 22:45:00.1510 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-07-16 22:45:00.1765 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-07-16 22:45:00.1869 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\alper\Documents\vsstudio project\Asp.Net-Core-API\WebApiBtk\nlog.config
+2024-07-16 22:45:00.2073 Info Configuration initialized.
+2024-07-16 22:46:36.3565 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-07-16 22:46:36.3783 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-07-16 22:46:36.3878 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\alper\Documents\vsstudio project\Asp.Net-Core-API\WebApiBtk\nlog.config
+2024-07-16 22:46:36.3991 Info Configuration initialized.
+2024-07-16 22:48:14.3573 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-07-16 22:48:14.4013 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-07-16 22:48:14.4796 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\alper\Documents\vsstudio project\Asp.Net-Core-API\WebApiBtk\nlog.config
+2024-07-16 22:48:14.5283 Info Configuration initialized.
+2024-07-16 22:49:25.8366 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-07-16 22:49:25.8569 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-07-16 22:49:25.8672 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\alper\Documents\vsstudio project\Asp.Net-Core-API\WebApiBtk\nlog.config
+2024-07-16 22:49:25.8831 Info Configuration initialized.
+2024-07-16 22:52:40.8836 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-07-16 22:52:40.9058 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-07-16 22:52:40.9152 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\alper\Documents\vsstudio project\Asp.Net-Core-API\WebApiBtk\nlog.config
+2024-07-16 22:52:40.9286 Info Configuration initialized.
+2024-07-16 22:55:22.7084 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-07-16 22:55:22.7776 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-07-16 22:55:22.7999 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\alper\Documents\vsstudio project\Asp.Net-Core-API\WebApiBtk\nlog.config
+2024-07-16 22:55:22.8224 Info Configuration initialized.
+2024-07-16 22:55:52.6336 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-07-16 22:55:52.6557 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-07-16 22:55:52.6670 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\alper\Documents\vsstudio project\Asp.Net-Core-API\WebApiBtk\nlog.config
+2024-07-16 22:55:52.6799 Info Configuration initialized.
