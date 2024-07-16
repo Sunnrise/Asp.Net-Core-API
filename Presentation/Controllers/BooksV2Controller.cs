@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Presentation.Controllers
 {
-    [ApiVersion("2.0")]
+    //[ApiVersion("2.0", Deprecated =true)]
     [ApiController]
     //[Route("api/{v:apiversion}/books")]// its for url versioning
     [Route("api/books")]
