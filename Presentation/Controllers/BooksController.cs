@@ -27,9 +27,9 @@ namespace Presentation.Controllers
         {
             _manager = manager;
         }
-
+        [HttpHead]
         [ServiceFilter(typeof(ValidateMediaTypeAttribute))]
-        [HttpGet]
+        [HttpGet(Name ="GetAllBooksAsync")]
         public async Task<IActionResult> GetAllBooksAsync([FromQuery]BookParameters bookParameters)
          {
             var linkParameters = new LinkParameters() { HttpContext=HttpContext, BookParameters = bookParameters };
@@ -105,6 +105,13 @@ namespace Presentation.Controllers
             await _manager.BookService.SaveChangesForPatchAsync(result.bookDtoForUpdate, result.book);
 
             return NoContent(); // 204
+        }
+
+        [HttpOptions]
+        public IActionResult GetBooksOptions()
+        {
+            Response.Headers.Add("Allow", "GET,OPTIONS,POST,PUT,PATCH,DELETE,HEAD");
+            return Ok();
         }
     }
 }
