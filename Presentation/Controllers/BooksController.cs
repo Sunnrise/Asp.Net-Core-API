@@ -27,9 +27,9 @@ namespace Presentation.Controllers
         {
             _manager = manager;
         }
-
+        [HttpHead]
         [ServiceFilter(typeof(ValidateMediaTypeAttribute))]
-        [HttpGet]
+        [HttpGet(Name ="GetAllBooksAsync")]
         public async Task<IActionResult> GetAllBooksAsync([FromQuery]BookParameters bookParameters)
          {
             var linkParameters = new LinkParameters() { HttpContext=HttpContext, BookParameters = bookParameters };
