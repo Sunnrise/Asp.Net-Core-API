@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
 using Presentation.ActionFilters;
 using Presentation.Controllers;
 using Repositories.Contracts;
@@ -176,6 +177,60 @@ namespace WebApiBtk.Extensions
 
             });
         }
+        public static void ConfigureSwagger(this IServiceCollection services)
+        {
+            services.AddSwaggerGen(s=>
+            {
+                s.SwaggerDoc("v1", new OpenApiInfo 
+                { 
+                    Title = "WebApiBtk",
+                    Version = "v1",
+                    Description = "Btk Academy Asp.Net Core Web Api",
+                    TermsOfService = new Uri("https://www.btkakademi.gov.tr"),
+                    Contact = new OpenApiContact
+                    {
+                        Name = "Alperen Güneş",
+                        Email = "alperengunes.eng@gmail.com",
+                        Url = new Uri("https://www.linkedin.com/in/alperen-gunes/")
+                    },
+                });
+                s.SwaggerDoc("v2", new OpenApiInfo 
+                { 
+                    Title = "WebApiBtk",
+                    Version = "v2",
+                    Description = "Btk Academy Asp.Net Core Web Api",
+                    TermsOfService = new Uri("https://www.btkakademi.gov.tr"),
+                    Contact = new OpenApiContact
+                    {
+                        Name = "Alperen Güneş",
+                        Email = "alperengunes.eng@gmail.com",
+                        Url = new Uri("https://www.linkedin.com/in/alperen-gunes/")
+                    },
+                });
+
+                s.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                {
+                    In = ParameterLocation.Header,
+                    Description = "JWT Authorization header using the Bearer scheme",
+                    Name= "Authorization",
+                    Type = SecuritySchemeType.ApiKey,
+                    Scheme = "Bearer"
+                });
+                s.AddSecurityRequirement(new OpenApiSecurityRequirement
+                {
+                    {
+                        new OpenApiSecurityScheme
+                        {
+                            Reference = new OpenApiReference
+                            {
+                                Type = ReferenceType.SecurityScheme,
+                                Id = "Bearer"
+                            }
+                        },
+                        new List<string>()
+                    }
+                });
+            });
+        }
     }
-   
 }

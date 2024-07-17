@@ -19,6 +19,7 @@ using System.Threading.Tasks;
 namespace Presentation.Controllers
 {
     //[ApiVersion("1.0")]
+    [ApiExplorerSettings(GroupName = "v1")]
     [ServiceFilter(typeof(LogFilterAttribute))]
     [ApiController]
     //[Route("api/{v:apiversion}/books")]// Its for url versioning
