@@ -62,5 +62,15 @@ namespace Presentation.Controllers
         //            pm.globals.set("accessToken", token)
         //});
         //access token on postman, We define a global variable called accessToken and set it to the token value returned by the server.
+
+        [HttpPost("refresh")]
+        [ServiceFilter(typeof(ValidationFilterAttribute))]
+        public async Task<IActionResult> RefreshToken([FromBody] TokenDto tokenDto)
+        {
+            var tokenDtoToReturn = await _serviceManager
+                .AuthenticationService
+                .RefreshToken(tokenDto);
+            return Ok(tokenDtoToReturn);
+        }
     }
 }
