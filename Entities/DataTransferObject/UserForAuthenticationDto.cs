@@ -12,6 +12,6 @@ namespace Entities.DataTransferObject
         [Required(ErrorMessage = "User name is required")]
         public string? UserName { get; init; }
         [Required(ErrorMessage = "Password is required")]
-        public String? Password { get; init; }
+        public string? Password { get; init; }
     }
 }
