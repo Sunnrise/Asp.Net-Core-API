@@ -24,9 +24,10 @@ builder.Services.AddControllers(config =>
 })
 .AddXmlDataContractSerializerFormatters()
 .AddCustomCSVFormatter()
-
-.AddApplicationPart(typeof(Presentation.AssemblyReference).Assembly);
-//.AddNewtonsoftJson();
+.AddApplicationPart(typeof(Presentation.AssemblyReference).Assembly)
+.AddNewtonsoftJson(options=>
+options.SerializerSettings.ReferenceLoopHandling=
+Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
 //builder.Services.AddScoped<ValidationFilterAttribute>();//IoC
 
@@ -60,6 +61,9 @@ builder.Services.AddHttpContextAccessor();
 
 builder.Services.ConfigureIdentity();
 builder.Services.ConfigureJWT(builder.Configuration);
+
+builder.Services.RegisterRepositories();
+builder.Services.RegisterServices();
 
 
 
