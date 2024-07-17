@@ -128,7 +128,7 @@ namespace WebApiBtk.Extensions
                 new RateLimitRule
                 {
                     Endpoint = "*",
-                    Limit = 4,
+                    Limit = 60,
                     Period = "1m"
                 }
             };
@@ -232,5 +232,18 @@ namespace WebApiBtk.Extensions
                 });
             });
         }
+        public static void RegisterRepositories(this IServiceCollection services)
+        {
+            services.AddScoped<IBookRepository, BookRepository>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
+
+        }
+        public static void RegisterServices(this IServiceCollection services)
+        {
+            services.AddScoped<IBookService, BookManager>();
+            services.AddScoped<ICategoryService, CategoryManager>();
+            services.AddScoped<IAuthenticationService, AuthenticationManager>();
+        }
+
     }
 }

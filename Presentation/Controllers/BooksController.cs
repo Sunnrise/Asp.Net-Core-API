@@ -15,6 +15,7 @@ using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using static System.Reflection.Metadata.BlobBuilder;
 
 namespace Presentation.Controllers
 {
@@ -69,17 +70,17 @@ namespace Presentation.Controllers
 
         [Authorize]
         [HttpGet("details")]
-        public async Task<IActionResult> GetAllBooksWithDetailAsync()
+        public async Task<IActionResult> GetAllBooksWithDetailsAsync()
         {
-            var books = await _manager
+            return Ok(await _manager
                 .BookService
-                .GetAllBooksWithDetailsAsync(false);
+                .GetAllBooksWithDetailsAsync(false));
 
-            return Ok(books);
+            
         }
 
 
-        [Authorize(Roles = "Admin, Editor")]
+        [Authorize]
         [ServiceFilter(typeof(ValidationFilterAttribute))]
         [HttpPost(Name ="CreateOneBookAsync")]
         public async Task<IActionResult> CreateOneBookAsync([FromBody] BookDtoForInsertion bookDto)
