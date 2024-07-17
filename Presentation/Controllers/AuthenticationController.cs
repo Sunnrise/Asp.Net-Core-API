@@ -32,7 +32,7 @@ namespace Presentation.Controllers
             {
                 foreach(var error in result.Errors)
                 {
-                    ModelState.AddModelError(error.Code, error.Description);
+                    ModelState.TryAddModelError(error.Code, error.Description);
                 }
                 return BadRequest(ModelState);
             }
