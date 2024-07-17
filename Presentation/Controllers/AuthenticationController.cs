@@ -47,7 +47,20 @@ namespace Presentation.Controllers
             if(! await _serviceManager.AuthenticationService.ValidateUser(userForAuthenticationDto))
                 return Unauthorized();
 
-            return Ok(new { Token = await _serviceManager.AuthenticationService.CreateToken() });
+            var tokenDto = await _serviceManager
+                .AuthenticationService
+                .CreateToken(populateExp:true);
+
+            return Ok(tokenDto);
         }
+        //        pm.test("Status code is 200", function()
+        //        {
+        //            pm.response.to.have.status(200);
+
+        //            const response = pm.response.json();
+        //            let token = response.token;
+        //            pm.globals.set("accessToken", token)
+        //});
+        //access token on postman, We define a global variable called accessToken and set it to the token value returned by the server.
     }
 }
