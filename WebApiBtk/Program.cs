@@ -58,7 +58,7 @@ builder.Services.AddMemoryCache();
 builder.Services.ConfigureRateLimitingOptions();
 builder.Services.AddHttpContextAccessor();
 
-builder.Services.AddAuthentication();
+builder.Services.ConfigureJWT(builder.Configuration);
 builder.Services.ConfigureIdentity();
 
 
