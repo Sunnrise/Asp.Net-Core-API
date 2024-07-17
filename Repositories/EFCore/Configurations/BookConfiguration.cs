@@ -18,18 +18,21 @@ namespace Repositories.EFCore.Configurations
                 new Book
                 {
                     Id = 1,
+                    CategoryId = 1,
                     Title = "Book 1",
                     Price = 100
                 },
                 new Book
                 {
                     Id = 2,
+                    CategoryId = 2,
                     Title = "Book 11",
                     Price = 10000
                 },
                 new Book
                 {
                     Id = 3,
+                    CategoryId = 2,
                     Title = "Book 10",
                     Price = 1000
                 });

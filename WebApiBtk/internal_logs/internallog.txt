@@ -570,3 +570,33 @@
 2024-07-17 21:53:44.0407 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
 2024-07-17 21:53:44.0407 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\alper\Documents\vsstudio project\Asp.Net-Core-API\WebApiBtk\nlog.config
 2024-07-17 21:53:44.0633 Info Configuration initialized.
+2024-07-17 22:00:42.1974 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-07-17 22:00:42.2180 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-07-17 22:00:42.2249 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\alper\Documents\vsstudio project\Asp.Net-Core-API\WebApiBtk\nlog.config
+2024-07-17 22:00:42.2249 Info Configuration initialized.
+2024-07-17 22:00:43.1815 Info AppDomain Shutting down. LogFactory closing...
+2024-07-17 22:00:43.1815 Info LogFactory has been closed.
+2024-07-17 22:00:53.3103 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-07-17 22:00:53.3223 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-07-17 22:00:53.3223 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\alper\Documents\vsstudio project\Asp.Net-Core-API\WebApiBtk\nlog.config
+2024-07-17 22:00:53.3367 Info Configuration initialized.
+2024-07-17 22:00:54.2538 Info AppDomain Shutting down. LogFactory closing...
+2024-07-17 22:00:54.2597 Info LogFactory has been closed.
+2024-07-17 22:01:38.6856 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-07-17 22:01:38.6984 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-07-17 22:01:38.6984 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\alper\Documents\vsstudio project\Asp.Net-Core-API\WebApiBtk\nlog.config
+2024-07-17 22:01:38.7157 Info Configuration initialized.
+2024-07-17 22:01:40.1265 Info AppDomain Shutting down. LogFactory closing...
+2024-07-17 22:01:40.1319 Info LogFactory has been closed.
+2024-07-17 22:15:48.2549 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-07-17 22:15:48.3061 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-07-17 22:15:48.3061 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\alper\Documents\vsstudio project\Asp.Net-Core-API\WebApiBtk\nlog.config
+2024-07-17 22:15:48.3247 Info Configuration initialized.
+2024-07-17 22:18:34.1147 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-07-17 22:18:34.1429 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-07-17 22:18:34.1569 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\alper\Documents\vsstudio project\Asp.Net-Core-API\WebApiBtk\nlog.config
+2024-07-17 22:18:34.1735 Info Configuration initialized.
+2024-07-17 22:19:22.0139 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2024-07-17 22:19:22.0325 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.2.2526. Product version: 5.3.2+8d52d4f3fcdbd84beae3442e1fdc8125598ed81f. GlobalAssemblyCache: False
+2024-07-17 22:19:22.0426 Info Validating config: TargetNames=logfile, ConfigItems=12, FilePath=C:\Users\alper\Documents\vsstudio project\Asp.Net-Core-API\WebApiBtk\nlog.config
+2024-07-17 22:19:22.0426 Info Configuration initialized.
