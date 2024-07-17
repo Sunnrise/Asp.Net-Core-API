@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Repositories.EFCore;
 
@@ -11,9 +12,11 @@ using Repositories.EFCore;
 namespace WebApiBtk.Migrations
 {
     [DbContext(typeof(RepositoryContext))]
-    partial class RepositoryContextModelSnapshot : ModelSnapshot
+    [Migration("20240716183040_AddRolesToDatabase")]
+    partial class AddRolesToDatabase
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -110,12 +113,6 @@ namespace WebApiBtk.Migrations
                     b.Property<bool>("PhoneNumberConfirmed")
                         .HasColumnType("bit");
 
-                    b.Property<string>("RefreshToken")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("RefreshTokenExpiryTime")
-                        .HasColumnType("datetime2");
-
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
 
@@ -168,22 +165,19 @@ namespace WebApiBtk.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "a7163d55-aa2a-4fec-b6a7-a2013443bd49",
-                            ConcurrencyStamp = "0632d0b3-24da-4579-be59-0d259756a1be",
+                            Id = "cb564188-889a-43c7-928b-84c3ca4c32d8",
                             Name = "Admin",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = "ea568fe3-7f9e-4cda-8f92-83138e25deb6",
-                            ConcurrencyStamp = "4f1b4150-0e0e-4953-afd4-c3c7c2c5ef33",
+                            Id = "46b0011d-911a-47ba-adec-763558321e2b",
                             Name = "User",
                             NormalizedName = "USER"
                         },
                         new
                         {
-                            Id = "93549d41-2ccf-487e-a88e-61bf8d5c634f",
-                            ConcurrencyStamp = "bc46b4ec-fa6a-4e91-a0db-3308271cc809",
+                            Id = "caf09860-4dbc-4a3c-9eb6-7336a3cd16f1",
                             Name = "Editor",
                             NormalizedName = "EDITOR"
                         });
