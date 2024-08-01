@@ -103,5 +103,5 @@ This project is based on tutorials and examples from the following resources:
 
 
 
-The playlist provides in-depth tutorials on Onion Architecture, covering various topics and practical examples. Check out the YouTube channel for more tutorials and the GitHub account for additional resources and projects.
+The playlist provides in-depth tutorials on Web API, covering various topics and practical examples. Check out the GitHub account for additional resources and projects.
 
