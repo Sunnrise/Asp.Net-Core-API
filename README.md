@@ -1,4 +1,4 @@
-# Onion Architecture Project
+# ASP.NET CORE WEB API PROJECT
 
 This repository contains the code for  ASP.NET CORE WEB AP, based on a comprehensive BTK academy course and additional resources by [Zafer Cömert](https://www.linkedin.com/in/zafer-c%C3%B6mert-51000367/) and [@zcomert](https://github.com/zcomert).
 
